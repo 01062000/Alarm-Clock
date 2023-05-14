@@ -9,6 +9,7 @@ var alarmsContainer = document.querySelector(".alarmsContainer");
 var setAlarmBtn = document.querySelector(".setAlarmBtn");
 var currentTime;
 var alarmDiv;
+//adding event listener to set alarm
 setAlarmBtn.addEventListener("click", () => {
   console.log("time :" + currentTime);
   console.log("selected time :" + selectedTime.value);
@@ -29,7 +30,7 @@ setAlarmBtn.addEventListener("click", () => {
     alarmsContainer.removeChild(alarmDiv);
     clearInterval(intervalID);
   })
-
+  //creating a set interval
   setAlarmInterval();
 
 });
@@ -41,15 +42,16 @@ function setAlarm(){
         alert("Alarm Ringing");
     }
 }
+//interval id
 var intervalID;
 function setAlarmInterval(){
     intervalID =  setInterval(setAlarm, 1000);
 }
 
+//function to get the cuurent time 
 function getCurrentTime() {
   currentTime = new Date();
   currentTime = currentTime.toLocaleTimeString("it-IT");
   currentTimeElement.innerHTML = currentTime;
 }
-
 setInterval(getCurrentTime, 1000);
