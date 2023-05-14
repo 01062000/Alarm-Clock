@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="clockContainer">
+        <div class="currentTime">
+          <h2 class="time"></h2>
+        </div>
+
+        <div class="setAlarm">
+          <div class="alarmInput">
+            <input type="time" id="selectedTime" step="2">
+            <select required name="am-pm" id="am-pm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <button type="submit" class="setAlarmBtn">Set Alarm</button>
+        </div>
+
+        <div class="alarmsContainer">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://images.pexels.com/photos/4082638/pexels-photo-4082638.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load') no-repeat;
+    background-size: cover;
+}
+.clockContainer{
+    width: 50%;
+    height: 70%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.currentTime{
+    width: 100%;
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currentTime h2{
+    font-size: 3.5rem;
+    color: aliceblue;
+    font-weight: lighter;
+}
+.setAlarm{
+    width: 100%;
+    flex: 0.2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type='time'], select{
+    outline: none;
+    background-color: black;
+    color: white;
+}
+.setAlarmBtn, .delAlarmBtn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: 2px solid #7d5216;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8d693c;
+}
+.setAlarmBtn:hover, .delAlarmBtn:hover{
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+}
+.alarmsContainer{
+    width: 100%;
+    flex: 0.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.alarmDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex: 0.5;
+}
+.alarmDiv p{
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: lighter;
+}
