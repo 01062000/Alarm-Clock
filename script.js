@@ -2,11 +2,12 @@
 
 console.log("app running");
 
-var currentTimeElement = document.querySelector(".time");
-var selectedTime = document.querySelector("#selectedTime");
-var alarmsContainer = document.querySelector(".alarmsContainer");
+const currentTimeElement = document.querySelector(".time");
+const selectedTime = document.querySelector("#selectedTime");
+const alarmsContainer = document.querySelector(".alarmsContainer");
+const am_pm = document.querySelector("#am-pm");
 
-var setAlarmBtn = document.querySelector(".setAlarmBtn");
+const setAlarmBtn = document.querySelector(".setAlarmBtn");
 var currentTime;
 var alarmDiv;
 //adding event listener to set alarm
@@ -34,7 +35,7 @@ setAlarmBtn.addEventListener("click", () => {
   setAlarmInterval();
 
 });
-
+//alert method calls when the time goes off
 function setAlarm(){
     if(currentTime == `${selectedTime.value}`){
         clearInterval(intervalID);

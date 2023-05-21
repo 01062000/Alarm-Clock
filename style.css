@@ -10,18 +10,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('https://images.pexels.com/photos/4082638/pexels-photo-4082638.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load') no-repeat;
+    background: url('https://images.pexels.com/photos/4082638/pexels-photo-4082638.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load') rgba(0, 0, 0, 0.9) no-repeat;
     background-size: cover;
 }
 .clockContainer{
     width: 50%;
-    height: 70%;
-    border: 1px solid white;
+    height: 75%;
+    border: 1px solid #7d5216;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border-radius: 50px;
+    border-radius: 45px;
+    box-shadow: 0 0 20px 2px #7d5216;
+}
+.clockContainer h3{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 .currentTime{
     width: 100%;
@@ -42,10 +50,20 @@
     justify-content: space-around;
     align-items: center;
 }
-input[type='time'], select{
+input[type='time']{
     outline: none;
     background-color: black;
     color: white;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #7d5216;
+}
+select{
+    outline: none;
+    background-color: black;
+    color: white;
+    height: 42px;
+    border: 2px solid #7d5216;
 }
 .setAlarmBtn, .delAlarmBtn{
     width: 100px;
@@ -64,7 +82,7 @@ input[type='time'], select{
 }
 .alarmsContainer{
     width: 100%;
-    flex: 0.5;
+    flex: 0.8;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,8 +92,11 @@ input[type='time'], select{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    flex: 0.5;
+    width: 80%;
+    flex: 0.2;
+    border: 1px solid #7d5216;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px #7d5216;
 }
 .alarmDiv p{
     font-size: 1.5rem;
